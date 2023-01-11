@@ -1,0 +1,53 @@
+{
+  "name": "assignment5",
+  "version": "1.0.0",
+  "description": "Assignment 5",
+  "main": "/src/server/index.js",
+  "type": "module",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "joi": "^17.3.0",
+    "md5": "^2.3.0",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0",
+    "prop-types": "^15.7.2",
+    "pug": "^3.0.0",
+    "puppeteer": "^19.2.1",
+    "serve-favicon": "^2.5.0",
+    "simple-env-config": "^1.0.1",
+    "styled-components": "^5.2.0",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "nodemon ./src/server/index.cjs",
+    "start-test": "cross-env NODE_ENV=test node ./src/server/index.cjs",
+    "start-ci": "cross-env NODE_ENV=ci node ./src/server/index.cjs",
+    "test": "cross-env NODE_ENV=test mocha --recursive",
+    "test-ci": "cross-env NODE_ENV=ci mocha --recursive"
+  },
+  "author": "G. Hemingway",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "async": "^3.2.0",
+    "babel-loader": "^9.0.1",
+    "chai": "^4.2.0",
+    "cross-env": "^7.0.2",
+    "mocha": "^10.1.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.4.3",
+    "react-router-dom": "^6.4.3",
+    "should": "^13.2.3",
+    "superagent": "^8.0.3"
+  }
+}
